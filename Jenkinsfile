@@ -9,13 +9,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from GitHub
-                git url: 'https://github.com/Zin-lr/clusterMSK.git', branch: 'main'
-            }
-        }
-
         stage('Terraform Init') {
             steps {
                 // Initialize Terraform
