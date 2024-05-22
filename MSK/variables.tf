@@ -11,7 +11,7 @@ variable "broker_instance_type" {
 variable "cluster_name" {
   description = "name for msk cluster"
   type = string
-  default = "msk-clutser"
+  default = "kafka-clutser"
 }
 variable "kafka_version" {
   type = string
