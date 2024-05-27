@@ -1,6 +1,6 @@
 resource "aws_security_group" "sg_msk" {
-  name   = var.security_group_name
-  vpc_id = var.vpcID
+  name   = MSK/var.security_group_name
+  vpc_id =  MSK/var.vpcID
 
   ingress {
     from_port   = 9092
