@@ -3,7 +3,7 @@ module "msk_cluster" {
   source = "./MSK"
 
   #aws_region          = "us-east-1"
-  #cluster_name        = "my-msk-cluster"
+  cluster_name        = "my-msk-cluster"
   #kafka_version       = "2.8.0"
   #number_of_broker_nodes = 2
   #broker_instance_type = "kafka.m5.large"
