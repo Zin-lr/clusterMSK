@@ -9,7 +9,7 @@ module "msk_cluster" {
   #broker_instance_type = "kafka.m5.large"
   #ebs_volume_size     = 100
   subnet_ids          = ["subnet-040289f3533a4d4e2", "subnet-0864c77375bd4a6fa"] 
-  #security_group_ids  = ["sg-02066512d1dc6d15f"]
+  security_group_ids  = [aws_security_group.sg_msk.id]
   tags                = {
     Environment = "dev1"
     Project     = "msk-project1"
