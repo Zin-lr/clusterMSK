@@ -32,8 +32,8 @@ resource "aws_msk_cluster" "msk_cluster" {
     }
 
     client_subnets = var.subnet_ids
-    security_groups = var.security_group_ids
-    #security_groups = [aws_security_group.sg_msk.id]  # Référencement direct du groupe de sécurité
+    #security_groups = var.security_group_ids
+    security_groups = [aws_security_group.sg_msk.id]  # Référencement direct du groupe de sécurité
   }
 
   encryption_info {

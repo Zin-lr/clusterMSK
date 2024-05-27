@@ -11,7 +11,7 @@ variable "broker_instance_type" {
 variable "cluster_name" {
   description = "name for msk cluster"
   type = string
-  default = "kafka-clutser"
+  default = "msk-clutser"
 }
 variable "kafka_version" {
   type = string
@@ -54,7 +54,7 @@ variable "private_cidr_blocks" {
 }
 variable "vpcID" {
   type = string
-  default = "vpc-01a9469bd3ea5d7d9"
+  default = "vpc-09367e7dcf0a51fa5"
 }
 variable "security_group_name" {
   type = string
