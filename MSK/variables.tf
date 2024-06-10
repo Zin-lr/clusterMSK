@@ -1,7 +1,7 @@
-variable "aws_region" {
+avariable "aws_region" {
   description = "region to use for AWS resources"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 variable "broker_instance_type" {
   description = "The instance type for the broker nodes."
@@ -11,7 +11,7 @@ variable "broker_instance_type" {
 variable "cluster_name" {
   description = "name for msk cluster"
   type = string
-  default = "msk-clutser"
+  default = "mansa-msk-clutser"
 }
 variable "kafka_version" {
   type = string
@@ -19,7 +19,7 @@ variable "kafka_version" {
 }
 variable "number_of_broker_nodes" {
   type = number
-  default = 2
+  default = 1
 }
 variable "ebs_volume_size" {
   description = "The size in GiB of the EBS volume for the broker nodes."
@@ -54,9 +54,9 @@ variable "private_cidr_blocks" {
 }
 variable "vpcID" {
   type = string
-  default = "vpc-09367e7dcf0a51fa5"
+  default = "vpc-0a3570bf43997e60f"
 }
 variable "security_group_name" {
   type = string
-  default = "Msk-security-group"
+  default = "mansa-Msk-security-group"
 }
